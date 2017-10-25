@@ -11,4 +11,4 @@ Directions
 Additional info
 ===============
 The workflow will run for 16 hours straight. If your stream is somehow longer than that, you will have to restart the workflow around the 16 hour mark. 
-This is the maximum allowed time for the workflow unfortunately. If you need any more help, shoot me an email.
+This is the maximum allowed time for the workflow unfortunately. Enjoy!
