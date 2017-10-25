@@ -13,3 +13,7 @@ Additional info
 ===============
 The workflow will run for 16 hours straight. If your stream is somehow longer than that, you will have to restart the workflow around the 16 hour mark. 
 This is the maximum allowed time for the workflow unfortunately. Enjoy!
+
+Updating the song faster
+========================
+The runscript.workflow has the loop time set to 10 seconds to update the song info. You can of course lower this variable to approximately 2 seconds, or increase it according to your personal needs. The script is highly customizable.
