@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>global idleTime, currentName, currentArtist, currentAlbum, currentInfoon run	set idleTime to 10	set curDBID to missing value		if itunes_running() then		show(currenttrackinfo())	end if		return idleTime	end runon idle	if itunes_running() then		show(currenttrackinfo())	end if	return idleTimeend idleon itunes_running()	tell application "System Events"		set isRunning to ((application processes whose (name is equal to "iTunes")) count)	end tell	if isRunning is greater than 0 then		return true	else		return false	end ifend itunes_runningon currenttrackinfo()	tell application "iTunes"				if player state is stopped then return false				set currentName to (get name of current track)		set currentArtist to (get artist of current track)		set currentAlbum to (get album of current track)			end tellend currenttrackinfoto show(currentSong)	set currentSongInfo to "name: " &amp; currentName &amp; return &amp; "artist: " &amp; currentArtist &amp; return &amp; "album: " &amp; currentAlbum		set theFilePath to ("/users/user/Desktop/songupdater.txt") as string	set theFileReference to open for access theFilePath with write permission	set eof of theFileReference to 0	write currentSongInfo to theFileReference starting at eof	close access theFileReferenceend showon quit	continue quitend quiton reopen	runend reopen</string>
+					<string>global idleTime, currentName, currentArtist, currentAlbum, currentInfoon run	set idleTime to 10	set curDBID to missing value		if itunes_running() then		show(currenttrackinfo())	end if		return idleTime	end runon idle	if itunes_running() then		show(currenttrackinfo())	end if	return idleTimeend idleon itunes_running()	tell application "System Events"		set isRunning to ((application processes whose (name is equal to "iTunes")) count)	end tell	if isRunning is greater than 0 then		return true	else		return false	end ifend itunes_runningon currenttrackinfo()	tell application "iTunes"				if player state is stopped then return false				set currentName to (get name of current track)		set currentArtist to (get artist of current track)		set currentAlbum to (get album of current track)			end tellend currenttrackinfoto show(currentSong)	set currentSongInfo to "name: " &amp; currentName &amp; return &amp; " | artist: " &amp; currentArtist &amp; return &amp; " | album: " &amp; currentAlbum		set theFilePath to ("/users/user/Desktop/songupdater.txt") as string	set theFileReference to open for access theFilePath with write permission	set eof of theFileReference to 0	write currentSongInfo to theFileReference starting at eof	close access theFileReferenceend showon quit	continue quitend quiton reopen	runend reopen</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -75,8 +75,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>40D49116-1A86-4DDA-81DD-CFD9D5E0160C</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>0CD48079-5921-4A41-8736-CD305820430F</string>
 				<key>UnlocalizedApplications</key>
@@ -302,8 +300,6 @@ end run</string>
 				<array/>
 				<key>OutputUUID</key>
 				<string>A7611954-0C8E-4D3F-AF44-B2FDEEAB6396</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>D60EE220-DF7C-403E-89D7-38E00D7DE5EB</string>
 				<key>UnlocalizedApplications</key>
@@ -378,14 +374,14 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>7469969D-25D6-4A51-90FD-C35ACEFE1952</key>
+		<key>768E0555-8681-456D-BE4D-45B64674A805</key>
 		<dict>
 			<key>from</key>
 			<string>C1AD0567-D2CF-410E-864F-A8F6D9DD374A - C1AD0567-D2CF-410E-864F-A8F6D9DD374A</string>
 			<key>to</key>
 			<string>D60EE220-DF7C-403E-89D7-38E00D7DE5EB - D60EE220-DF7C-403E-89D7-38E00D7DE5EB</string>
 		</dict>
-		<key>A482C037-5911-482E-A084-7A48F8538975</key>
+		<key>948F1AEF-DB66-421D-9EC8-A74E846A4671</key>
 		<dict>
 			<key>from</key>
 			<string>0CD48079-5921-4A41-8736-CD305820430F - 0CD48079-5921-4A41-8736-CD305820430F</string>
